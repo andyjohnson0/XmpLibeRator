@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>uk.andyjohnson.XmpLibeRator</RootNamespace>
+    <Title>Xmp LibeRator</Title>
+    <Authors>Andrew Johnson</Authors>
+    <Description>Extract XMP metadata from the Adobe Lightroom image catalogue</Description>
+    <PackageProjectUrl>https://github.com/andyjohnson0/XmpLibeRator</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/andyjohnson0/XmpLibeRator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>0.7</Version>
+    <AssemblyName>xmplr</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Iconic.Zlib.Netstandard" Version="1.0.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
